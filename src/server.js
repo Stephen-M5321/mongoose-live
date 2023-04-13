@@ -1,7 +1,3 @@
-
-
-
-
 const express = require("express")
 require("dotenv").config()
 require("./db/connection")
@@ -42,9 +38,6 @@ app.put("/books/deletebook", async (request, response) => {
     // response.send(successSendResponse)
     response.status(200).json(successSendResponse)
 })
-
-
-
 
 app.post("/books/addbook", async (req, res) => {
     try{       
